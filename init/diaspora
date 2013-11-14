@@ -26,8 +26,11 @@ LOGFILE=$DIASPORA_HOME/log/startscript.log
 SCRIPTNAME=$0
 USER=diaspora
 STARTUP_TIMEOUT=100
+VERBOSE=no
 
-. /lib/init/vars.sh
+if [ -f /lib/init/vars.sh ]; then
+    . /lib/init/vars.sh
+fi
 . /lib/lsb/init-functions
 
 check_unicorn() {
