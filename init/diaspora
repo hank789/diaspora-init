@@ -15,7 +15,7 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="Diaspora application server"
 NAME=diaspora
-DIASPORA_HOME="/opt/diaspora"
+DIASPORA_HOME="/home/diaspora/diaspora"
 
 # if you use mySQL:
 STARTSCRIPT=./script/server
